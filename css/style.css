@@ -1,0 +1,414 @@
+/* 1. common styles */
+/* 2. GENERAL STYLES */
+/* 3. Header SECTION */
+/* 4.0 MAIN SECTION */
+/* 4.1 category section */
+/* 4.2 Products section */
+/* 5.0 Footer */
+
+
+/* /////////////////////////////////////////////////////// 1. Common styles //////////////////////////////////////////////*/
+.section-header:hover .sp-title{width:150px;}
+.overlay{position: absolute;
+         height: 99.5%;
+         width: 100%;
+          top:0;
+           left:0;
+           background-color:  rgba(0,0,0,0.7);}
+/* /////////////////////////////////////////////////////2. General styles /////////////////////////////////////////////// */
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+   }
+body{font-family: sans-serif ; height:fit-content;
+}
+.container{width:80%;
+           margin: auto;
+           }
+a{text-decoration: none;}
+ul{list-style: none;}
+.section-header{text-align: center;}
+.section-title{font-size: 2.2rem;}
+.sp-title{height:2.5px; width:100px;background-color: #0a0909; display: block; margin:10px auto; transition: 0.7s;}
+/* ////////////////////////////////////////////////////////////////// 3. HEADER //////////////////////////////////////////////////////////////////////////////// */
+header{padding: 20px 0;  overflow: auto;}
+.logo, .nav-bar, .icons-header{ float: left;}
+.logo{margin-left: 0px;}
+.nav-bar{margin-left:15px;
+          padding:25px 0;}
+.icons-header{margin-left:40px; 
+              padding: 25px 0;}
+.nav-list li{display: inline-block; 
+             margin-left: 30px; 
+             font-size: 1.3rem; }
+.nav-list a{color: #221d1b; 
+            position: relative;}
+.flute{padding:0 16px;}
+.more{padding:0 17px;}
+.piano{padding:0 15px;}
+.violin{padding:0 17px;}
+.drums{padding:0 12px;}
+.zero{ width:20px; 
+    height:20px; 
+    border-radius: 50%; 
+    color: white; 
+    font-size: 18px; 
+    display: inline; 
+    background: #d0f653; 
+    padding: 2px;
+     }
+.icons-list li{display: inline-block;
+                 margin-left:35px; 
+                font-size: 1.6rem;
+                  }
+.icons-list a{color:black;}
+.icons-header .icons-list span{font-size: 1.1rem; 
+                              font-weight: bold; 
+                              color:#000000
+                               }
+.nav-list a::after{content:""; position: absolute;
+                 left:-15px;
+               border-width: 0 2px;
+                height: 32.7px;
+                width: 112px;
+                 transition: transform 0.3s;
+                 border-style: solid;
+                 transform: scale(1,0);
+                 }
+                 .nav-list a::before{content:""; position: absolute;
+                    top:-8px; left:-15px;
+                    border-width:2px 0;
+                    width: 115px;
+                    height: 43.5px;
+                     transition: transform 0.25s;
+                     transition-delay: 0.1s;
+                     border-style: solid;
+                     transform:scale(0,1);
+                     transform-origin: left;
+                     }
+.nav-list a:hover::after{ transform: scale(1,1.45);}
+.nav-list a:hover::before{ transform:scale(1,1)}
+table{border: none; color: rgb(62, 3, 62);
+      }
+.table1{border:1px solid #7b5244; 
+       width: fit-content;
+       height: 170px;
+       position: absolute;
+       z-index: 1; 
+       background: white; 
+       left:352px; top:90px;
+       transform:scale(0);
+       transition: 0.5s;
+       }
+td{padding:4px 30px; 
+    font-size: 1.1rem;
+    }
+th{text-decoration: underline dashed; padding: 5px 30px; 
+    font-size: 1.2rem; text-transform: uppercase;
+     }
+.guitar-menu:hover .table1{transform:scale(1,1); }
+
+/* ///////////////////////////////////////////////4.0 Main section//////////////////////////////////////////////////////////////// */
+main .container{position: relative;}
+main{padding:0 0; margin: 10px 0; overflow: auto; height: 610px; }
+.main-content{position: absolute; 
+              top:30%; 
+              left: 50px; 
+              width:420px;
+              }
+.h-main{color:white; 
+        font-size: 3.5rem;
+        text-shadow: 6px 6px 5px black;
+      }
+       .main-content{ animation-name:change-main;
+        animation-duration:3.9s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        }
+        @keyframes change-main{0%{transform: scale(0);}
+                                100%{transform: scale(1,1);}}
+.btn-main{width:120px; height: 40px; cursor: pointer; 
+          background-color: rgba(108, 106, 106, 0.6);
+          margin-top: 40px; margin-left: 20px; color: white;
+          font-size: 14px; font-weight: bold; font-family:sans-serif;
+          box-shadow: 2.5px 2.5px .5px 0px rgba(0,0,0,0.6);
+          }
+          .btn-main:hover{background: rgb(255,255,255); color: black;}
+/* ////////////////////////////////////////////////////////4.1 Category section///////////////////////////////////////////////////////// */
+.category .container{column-width: 280px;
+                     padding: 20px 0;}
+.category-item{float: left; }
+.category-item h4{color: gray; 
+                  font-size: 17px;
+                   }
+.category-item h2{font-size: 21px; 
+                   display: inline;
+                    }
+.category-item i{background: rgb(139, 15, 15); 
+                 font-size: 27px; width: 30px; 
+                 color: white; text-align: center;
+                 margin-left: 110px; visibility: hidden;
+                  }
+.category-item:hover.category-item i{visibility: visible;}
+
+.container2{width:80%; margin: auto; padding: 20px 0;}
+/* .top-div1-discount{border-top: solid 2px black; border-left:solid 2px black} */
+.div1-discount, .div2-discount, .div3-discount{float: left;}
+.div1-discount{width:50%; 
+               background: #f7f3ef; 
+               padding: 15px 18px;
+                }
+.div1-discount{background-color: rgb(22, 18, 18);}
+.div2-discount{width:24%; background-image: url(../images/saxophone.jpg); 
+               margin:0 1%; background-size: cover; 
+               height: 340px; position: relative; 
+               transition: .5s; background-position: -200px 0;
+               }
+.div3-discount{width:24%; background-image: url(../images/violin\ 4.jpg);
+               background-size: cover; height: 340px; 
+               position: relative; transition: .5s; background-position: -80px 0;
+               }
+.lines-discount{ width: fit-content; 
+                 margin-left: auto; 
+                 margin-top:60px; 
+                 padding: 0 15px;
+                 }
+.line-discount{width:45px; height: 2px; 
+               background: #7b5244; margin:15px auto; 
+               display: inline-block; margin-left: 8px;
+                }
+.div1-discount i{font-size: 3rem; 
+                 color: #7b5244; }
+.para-discount{color:rgb(145, 143, 143);
+}
+.discount-title{color: rgb(145,143,143);
+}
+.div1-discount h2{display: inline-block;
+}
+.div1-discount p{font-size:18px; 
+                 line-height: 28px;
+                 word-break: keep-all;
+}
+.discount-subtitle{display:block; 
+                   margin-left:2px; 
+                   font-size: 18px;
+                   color: rgb(158, 156, 156);
+                    }
+.discount-content{position:absolute;
+                  top:10%; left:8%;
+                  }
+.discount-percent{color: white; 
+                  font-size: 1.4rem;
+                  animation:change-discount 4s infinite;
+}
+@keyframes change-discount{0%{color:white;}
+                            25%{color:rgb(59, 215, 111);}
+                             50%{color:blue;}
+                              75%{color:rgb(226, 175, 175)}
+                                100%{color:aqua}}
+.discount-info{color: rgb(204, 192, 31);}
+.div2-discount:hover, .div3-discount:hover{transform:scale(1.06,1.06);
+}
+#div-icon{display: inline-block; 
+          text-align: center;
+          }
+#div-icon2{display: inline-block;
+            padding:5px 0;}
+
+.container3{width:80%;margin:auto; 
+            overflow: auto; 
+            padding:30px 0;
+            border-bottom: 1px solid #926f63;
+            height: 190px;
+            }
+.services{float:left; width: 20%; 
+           text-align: center; 
+           border-right:solid 1px #81655c;
+            }
+.services-5{float:left; width:20%; text-align: center; }
+            
+.services-image1, .services-image2, 
+.services-image3, .services-image4, 
+.services-image5{background-image: url(../images/service-icon.png);
+                height:50px; width: 45px;
+                 background-repeat: no-repeat;
+                background-size: cover;
+                margin: auto; transition: 0.5s;
+                 }
+.services-image1{background-position: center 0;
+                }
+.services-image1:hover{background-position: center -95px;
+                       }
+.services-image2{ background-position: center -195px;
+                }
+.services-image2:hover{background-position: center -290px;
+                      }
+.services-image3{background-position: center -390px ;
+                }
+.services-image3:hover{background-position: center -490px;
+                      }
+.services-image4{background-position: center -590px ;
+                 }
+.services-image4:hover{background-position: center -690px;
+                      }
+.services-image5{background-position: center -785px ;
+                }
+.services-image5:hover{background-position: center -890px;
+                      }
+.services-description{font-size: 15.5px; color: gray;
+                      }
+.services-content{margin:8px 0;}
+/* ////////////////////////////////////////////////////////////////4.2 featured products /////////////////////////////////////////////////// */
+.products{padding:40px 0;
+}
+.container1-products{width:80%; 
+  margin: auto;
+}
+.products .container1-products .list-products li{display: inline-block; 
+                                                 font-size:1.2rem; 
+                                                 color: #201a18; 
+                                                margin-left: 40px; 
+                                                position: relative;
+                                                cursor: pointer;
+                                                animation-name: change-products;
+                                                animation-duration: 2.5s;
+                                                animation-iteration-count: infinite;
+                                                animation-direction: alternate;
+                                                animation-timing-function: ease-in-out;
+                                                 }
+@keyframes change-products{0%{transform: scale(1,1);}
+                            100%{transform: scale(1.2,1.2);}}
+.products .container1-products{padding:40px 17%
+                               }
+.list-products li::after{content: "";
+                        position: absolute; 
+                          bottom: 0; 
+                         left: 0; 
+                       margin-bottom:-4px; 
+                        height:2.2px; 
+                       width:0; 
+                        background: #0a0808; 
+                          transition: 0.8s;
+}
+.list-products li:hover::after{width:100%; 
+}
+.front-product{width:100%;
+               height:100%;
+}
+.social-products li{display: inline-block; 
+                      font-size: 1.3rem; 
+                    color:white; 
+                    background-color: yellowgreen;
+                     width:35px; height:35px;
+                      text-align: center; padding:6px 0; 
+}
+.product-item{position: relative; 
+               height: 450px; 
+               width: 100%;
+}
+.product-items{width:32%;
+}
+.social-products{position:absolute; 
+                top: 50%; 
+                left: 50%; 
+                 transform: translate(-50%,-50%);
+}
+.overlay-product{position: absolute; 
+                  z-index: 2; 
+                 top: 0; left: 0;
+                 opacity: 0.7; 
+                 transform: scalex(0); 
+                 transition: 0.2s; 
+                  height: 100%; 
+                    width: 100%; 
+  }
+.product-item-content li{display:inline-block; 
+                        color:yellowgreen;
+                        font-size:1.2rem;
+                      }
+.far{color:black; 
+      font-size: 1.1rem;
+}
+.product-title{font-size:1rem;
+}
+.product-item-content{line-height: 22px;
+}
+.product-items:hover .overlay-product{transform: scalex(1);
+}
+.products .container{display: flex; 
+                      flex-direction: row;
+                      justify-content: space-between;
+}
+/* ////////////////////////////////////////////////////////////////// Footer /////////////////////////////////////////////////////////////////////////////////////// */
+footer{background-color: rgba(0,0,0,0.8);
+        width:100%; height:330px; position: relative;}
+.back-top{width:100%;
+          color:white;
+           text-align: center; background-color: rgb(91, 88, 88);
+           padding: 15px 0;
+           position: relative;
+        }
+.back-top::after{content:"";
+                  position:absolute;
+                  top:0; left:0;
+                   width:0; height:100%;
+                   background-color: rgb(159, 152, 152,0.5);
+                   transition:.3s;
+                  }
+.back-top::before{content:"";
+  position:absolute;
+  top:0; right:0;
+   width:0; height:100%;
+   background-color: rgb(159, 152, 152,0.5);
+   transition:.3s;
+  }
+.back-top:hover::after{width:50%
+}
+.back-top:hover::before{width:50%
+}
+.footer-content{position: absolute;
+                top:50%; left:50%;
+                 transform: translate(-50%,-50%);
+                 text-align: center;
+                 margin-top:0px;
+                }
+.footer-list li{display:inline-block;
+                margin-left:10px;
+}
+.footer-list i{font-size:1.6rem;
+                color: white;
+                background-color: yellowgreen;
+                width:40px; height: 40px; 
+                padding: 7px 0;
+                border-radius:8px;
+                transition: .25s;                
+}
+.footer-list i:hover{border-radius:10px 20px
+}
+.para-footer{color:gray;
+}
+.subscribe{line-height: 30px;
+          position: absolute;
+          bottom:20px; right: 40px;
+        }
+.subscribe input{outline:none; 
+                 font-size: 15px;
+                 height: 45px;
+                  width:230px;
+                 border-radius: 6px;
+                }
+.subscribe button{ height: 35px; width: 90px;
+                   background: yellowgreen;
+                    cursor: pointer; border-radius: 15px;
+                    font-size: 1rem;
+                    transition: .5s;
+                    box-shadow: 0 0 10px rgba(49, 210, 49, 0.1);
+                    margin-left: 5px;
+}
+.subscribe button:hover{box-shadow: 0 0 14px rgba(119, 214, 45, 0.5);
+                        transform:scale(1.1);
+                      }
+.subscribe h3{font-size: 1.8rem; 
+              color: yellowgreen;
+              margin-left: 5px;}
